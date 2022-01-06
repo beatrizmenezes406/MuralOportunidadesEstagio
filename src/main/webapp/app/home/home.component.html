@@ -4,30 +4,26 @@
   </div>
 
   <div class="col-md-9">
-    <h1 class="display-4"><span>Welcome, Java Hipster!</span> (Mural Oportunidades Estagio)</h1>
+    <h1 class="display-4"><span>Bem vindo(a) ao Mural de Oportunidades de Estágio (MOE)!</span></h1>
 
-    <p class="lead">This is your homepage</p>
+    <p class="lead">Esta é a págin inicial do site.</p>
 
     <div [ngSwitch]="account !== null">
       <div class="alert alert-success" *ngSwitchCase="true">
-        <span id="home-logged-message" *ngIf="account">You are logged in as user "{{ account.login }}".</span>
+        <span id="home-logged-message" *ngIf="account">Você está logado com o usuário "{{ account.login }}".</span>
       </div>
 
       <div class="alert alert-warning" *ngSwitchCase="false">
-        <span>If you want to </span>
-        <a class="alert-link" (click)="login()">sign in</a
-        ><span
-          >, you can try the default accounts:<br />- Administrator (login="admin" and password="admin") <br />- User (login="user" and
-          password="user").</span
-        >
+        <span>Se você já tem acesso ao nosso sistema, basta clicar </span>
+        <a class="alert-link" (click)="login()">aqui</a><span>.</span>
       </div>
 
       <div class="alert alert-warning" *ngSwitchCase="false">
-        <span>You don't have an account yet?</span>&nbsp;
-        <a class="alert-link" routerLink="account/register">Register a new account</a>
+        <span>Ainda não tem acesso?</span>&nbsp;
+        <a class="alert-link" routerLink="account/register">Registre-se agora mesmo!</a>
       </div>
     </div>
-
+    <!--
     <p>If you have any question on JHipster:</p>
 
     <ul>
@@ -49,6 +45,6 @@
     <p>
       <span>If you like JHipster, don't forget to give us a star on</span>
       <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">GitHub</a>!
-    </p>
+    </p>-->
   </div>
 </div>

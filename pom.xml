@@ -7,7 +7,7 @@
 
     <groupId>com.mycompany.myapp</groupId>
     <artifactId>mural-oportunidades-estagio</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
     <name>Mural Oportunidades Estagio</name>
     <description>Description for MuralOportunidadesEstagio</description>
